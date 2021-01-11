@@ -12,48 +12,8 @@
         записи использовать get/set реализацию доступа. Также для полей нужно использовать модификаторы
         доступа (на Ваш выбор). В итоге должен получится словарь терминов, принимающий на входящий
         параметр различные типы данных для реализации. --> 
-        <div class="notes">
-          <input type="text" name="key" id="key" >
-          <input type="text" name="maining" id="maining" > = 
-          <input type="text" id="description" name="description">
-        </div>
-           
-        <script type="module" src="./dist/index.js"></script> 
-        <h1>Tabellen dynamisch erzeugen</h1>
-
-  <main>
-    <button id="ueber">Überschrift hinzufügen</button>
-    <button id="zeile">Zeile hinzufügen</button>
-    
-    <table id="tabelle">
-    </table>
-    
-  </main>
-  
-<script>
-  document.getElementById('ueber')
-          .addEventListener('click', ueberschriftEinfuegen);	
-  document.getElementById('zeile')
-          .addEventListener('click', zeileEinfuegen);	
-  
-  function ueberschriftEinfuegen () {
-     const tabelle = document.getElementById('tabelle');
-     // schreibe Tabellenüberschrift
-     const caption = tabelle.createCaption();
-     caption.innerHTML = 'Überschrift';
-  }
-  
-  function zeileEinfuegen () {
-     const tabelle = document.getElementById('tabelle');	  
-     // schreibe Tabellenzeile
-     const reihe = tabelle.insertRow(0);
-     for (var i = 0; i < 7; i++) {
-        let inhalt = 'Zelle ' + (i+1),
-            zelle = reihe.insertCell();
-        zelle.innerHTML = inhalt;	
-     }
-  }
-
-  </script>  
+        <div class="notes">         
+        </div>           
+        <script type="module" src="./dist/index.js"></script>        
 </body>
 </html>
